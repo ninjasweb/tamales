@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         </head>
         <body className={`${inter.className} ${open_sans.className}`}>
           <GoogleAnalytics></GoogleAnalytics>
-          {/* <Header/> */}
+          <Header/>
           {children}
           {/* <Footer/> */}
         </body>
