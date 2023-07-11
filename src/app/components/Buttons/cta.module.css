@@ -9,6 +9,10 @@
   width: max-content;
   letter-spacing: 1px;
   transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta:hover {
   transform: scale(1.05);

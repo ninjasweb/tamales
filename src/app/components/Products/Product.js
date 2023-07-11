@@ -9,7 +9,9 @@ const Product = ({title, image, price}) => {
       position: 'relative',
     }}>
       <p style={{
-        marginBottom: '1rem'
+        marginBottom: '1rem',
+        color: 'var(--yellow)',
+        fontWeight: 'bold'
       }}>{title}</p>
       <Image style={{
         borderRadius: '100%'

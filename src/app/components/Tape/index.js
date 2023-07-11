@@ -9,6 +9,11 @@ const Tape = () => {
         <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
         <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
         <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
       </div>
     </div>
    )

@@ -8,7 +8,10 @@ const Footer = () => {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#0E352C'
-    }}>Todos los derechos reservados</footer>
+    }}>2023 Todos los derechos reservados | Diseño: <a style={{
+      marginLeft: '5px',
+      color: 'var(--yellow)'
+    }} href="https://ninjasweb.com" target="_blank">Ninjasweb</a></footer>
    )
 }
  
