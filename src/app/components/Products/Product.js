@@ -26,7 +26,7 @@ const Product = ({title, image, price}) => {
         borderRadius: '100%',
         color: 'var(--green)',
         fontWeight: 'bold',
-        position: 'absolute',
+        //position: 'absolute',
         bottom: '0',
         right: '50px'
       }}>{price}</span>
