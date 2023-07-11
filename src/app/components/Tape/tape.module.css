@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  height: 30px;
+  background-color: var(--yellow);
+  overflow: hidden;
+}
+
+.cinta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: marquee 20s linear infinite;
+}
+
+.cinta span {
+  margin-right: 20px;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--green);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

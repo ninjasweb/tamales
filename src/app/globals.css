@@ -14,7 +14,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: var(--green);
+  background: rgb(20,70,58);
+  background: linear-gradient(180deg, rgba(20,70,58,1) 16%, rgba(14,53,44,1) 68%); 
 }
 
 a {

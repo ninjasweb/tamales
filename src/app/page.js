@@ -3,6 +3,7 @@ import CallToAction from './components/Buttons/CallToAction'
 import styles from './page.module.css'
 import TamalPng from '@/assets/img/tamal.png'
 import ProductGrid from './components/Products/ProductGrid'
+import Tape from './components/Tape'
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <p>Tenemos diferentes tamales para todos los gustos. <br></br> Escoge el que prefieras.</p>
         <ProductGrid/>
       </section>
+      {/* Aviso */}
+      <Tape/>
       {/* Horarios */}
       <section className={styles.times}>
         <h3>Horarios:</h3>
@@ -31,6 +34,8 @@ export default function Home() {
         <h3 style={{color: 'var(--yellow)', marginBottom: '1rem'}}>Tamal Tolimense</h3>
         <CallToAction>PEDIR AHORA</CallToAction>
       </section>
+      {/* Aviso */}
+      <Tape/>
     </main>
   )
 }
