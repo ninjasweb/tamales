@@ -22,7 +22,7 @@ export default function Home() {
           <ProductGrid/>
         </section>
         {/* Aviso */}
-        {/* <Tape/> */}
+        <Tape/>
         {/* Horarios */}
         <section className={styles.times}>
           <h3>Horarios:</h3>
@@ -37,7 +37,7 @@ export default function Home() {
           <CallToAction>PEDIR AHORA</CallToAction>
         </section>
         {/* Aviso */}
-        {/* <Tape/> */}
+        <Tape/>
       </main>
   )
 }
