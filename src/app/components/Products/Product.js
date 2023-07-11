@@ -7,10 +7,12 @@ const Product = ({title, image, price}) => {
       flexDirection: 'column',
       alignItems: 'center',
       position: 'relative',
+      marginTop: '2rem'
     }}>
       <p style={{
         marginBottom: '1rem',
         color: 'var(--yellow)',
+        fontSize: '1.5rem',
         fontWeight: 'bold'
       }}>{title}</p>
       <Image style={{

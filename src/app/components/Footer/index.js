@@ -3,6 +3,7 @@ const Footer = () => {
     <footer style={{
       textAlign: 'center',
       color: 'var(--white)',
+      width: '100%',
       height: '40px',
       display: 'flex',
       alignItems: 'center',
