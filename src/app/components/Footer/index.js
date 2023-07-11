@@ -6,7 +6,8 @@ const Footer = () => {
       height: '40px',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      backgroundColor: '#0E352C'
     }}>Todos los derechos reservados</footer>
    )
 }

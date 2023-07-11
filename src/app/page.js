@@ -16,7 +16,7 @@ export default function Home() {
       {/* Products */}
       <section className={styles.products}>
         <h2>Nuestros Tamales</h2>
-        <p>Tenemos diferentes tamales para todos los gustos. Escoge el que prefieras.</p>
+        <p>Tenemos diferentes tamales para todos los gustos. <br></br> Escoge el que prefieras.</p>
         <ProductGrid/>
       </section>
       {/* Horarios */}
@@ -24,6 +24,12 @@ export default function Home() {
         <h3>Horarios:</h3>
         <h4>SAB-DOM-FEST</h4>
         <h4>7:00 AM - 12:00 PM</h4>
+      </section>
+      {/* Call to Action */}
+      <section className={styles.cta}>
+        <h3 style={{color: 'var(--white)'}}>El verdadero</h3>
+        <h3 style={{color: 'var(--yellow)', marginBottom: '1rem'}}>Tamal Tolimense</h3>
+        <CallToAction>PEDIR AHORA</CallToAction>
       </section>
     </main>
   )
