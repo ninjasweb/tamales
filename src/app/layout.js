@@ -1,4 +1,4 @@
-//'use client'
+'use client'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import './globals.css'
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <title>Tamales del Tolima | El verdadero tamal tolimense.</title>
         </head>
         <body className={`${inter.className} ${open_sans.className}`}>
-          {/* <GoogleAnalytics></GoogleAnalytics> */}
+          <GoogleAnalytics></GoogleAnalytics>
           <Header/>
           {children}
           <Footer/>
