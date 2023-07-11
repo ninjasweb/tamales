@@ -3,7 +3,7 @@
   height: 35px;
   background-color: var(--yellow);
   overflow-x: hidden;
-  pointer-events: none;
+  pointer-events: none; /* Added */
 }
 
 .cinta {
