@@ -1,0 +1,16 @@
+.cta {
+  background-color: var(--white);
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  cursor: pointer;
+  width: max-content;
+  letter-spacing: 1px;
+  transition: all .3s ease-in-out;
+}
+.cta:hover {
+  transform: scale(1.05);
+  background-color: #D6DAA7;
+}
