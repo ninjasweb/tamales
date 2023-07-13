@@ -24,8 +24,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: '__Paytone_One_b52c41';
+}
+
+h2 {
+  font-family: '__Open_Sans_f3cbcc';
+}
+
 div, span, p {
-  font-family: 'Open Sans';
+  font-family: '__Open_Sans_f3cbcc';
 }
 
 @media (max-width: 600px){
