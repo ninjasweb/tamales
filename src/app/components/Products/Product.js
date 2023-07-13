@@ -10,7 +10,7 @@ const Product = ({title, image, price}) => {
       marginTop: '2rem'
     }}>
       <p style={{
-        marginBottom: '1rem',
+        marginBottom: '5px',
         color: 'var(--yellow)',
         fontSize: '1.5rem',
         fontWeight: 'bold'

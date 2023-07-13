@@ -14,7 +14,7 @@ const Header = () => {
     const handleResize = () => {
       const screenWidth = window.innerWidth
       setIsLogoAlter(screenWidth < 750)
-      setLogoSize(screenWidth < 750 ? { width: 130, height: 35 } : { width: 385, height: 25 })
+      setLogoSize(screenWidth < 750 ? { width: 130, height: 40 } : { width: 385, height: 25 })
     }
 
     handleResize()
@@ -40,7 +40,7 @@ const Header = () => {
                 <li>Pedir Online</li>
               </Link>
             </ul>
-            <CallToAction>Pedir Ahora</CallToAction>
+            <CallToAction icon>Pedir Ahora</CallToAction>
           </nav>
         </div>
       </header>

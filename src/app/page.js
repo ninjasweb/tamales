@@ -13,7 +13,7 @@ export default function Home() {
         <section className={styles.hero}>
           <Image priority={true} src={TamalPng.src} width={120} height={120} alt="tamal tolimense"/>
           <h1>Tamales <br></br><span>TOLIMENSES</span></h1>
-          <CallToAction>PEDIR AHORA</CallToAction>
+          <CallToAction icon={true}>PEDIR AHORA</CallToAction>
         </section>
         {/* Productos */}
         <section className={styles.products}>
@@ -34,7 +34,7 @@ export default function Home() {
         <section className={styles.cta}>
           <h3 style={{color: 'var(--white)'}}>El verdadero</h3>
           <h3 style={{color: 'var(--yellow)', marginBottom: '1rem'}}>Tamal Tolimense</h3>
-          <CallToAction>PEDIR AHORA</CallToAction>
+          <CallToAction icon>PEDIR AHORA</CallToAction>
         </section>
         {/* Aviso */}
         <Tape textToDisplay={'Pedidos: +57 312 300 60 90 |'}/>
