@@ -6,7 +6,7 @@ const CallToAction = ({children}) => {
   return ( 
     <>
       <button className={styles.cta}>
-        <Image style={{marginRight: '10px'}} src={WhatsappIcon} width={30} height={30} alt='Whatsapp Icon'/>
+        <Image priority={true} style={{marginRight: '10px'}} src={WhatsappIcon} width={30} height={30} alt='Whatsapp Icon'/>
         {children}
       </button>
     </>

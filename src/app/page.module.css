@@ -19,6 +19,7 @@
 }
 .hero h1 span {
   color: var(--yellow);
+  font-family: '__Paytone_One_b52c41';
 }
 @media (max-width: 550px ){
   .hero h1 {
@@ -39,6 +40,7 @@
   text-align: center;
   font-size: 2.5rem;
   line-height: 0.9;
+  font-family: 'Open Sans';
 }
 @media (max-width: 380px ){
   .products h2 {
@@ -48,6 +50,8 @@
 .products p {
   color: var(--white);
   text-align: center;
+  font-family: 'Open Sans';
+  margin-top: 1rem;
 }
 .times {
   width: 100%;
@@ -59,6 +63,7 @@
   text-align: center;
   font-size: 2.5rem;
   color: var(--white);
+  font-family: 'Open Sans';
 }
 .times h4 {
   color: var(--yellow);

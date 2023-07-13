@@ -24,3 +24,12 @@ a {
   text-decoration: none;
 }
 
+div, span, p {
+  font-family: 'Open Sans';
+}
+
+@media (max-width: 600px){
+  h2,h3,h4 {
+    font-size: 2rem !important;
+  }
+}

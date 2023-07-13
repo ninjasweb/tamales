@@ -11,7 +11,7 @@ export default function Home() {
       <main className={styles.main}>
         {/* Hero */}
         <section className={styles.hero}>
-          <Image src={TamalPng.src} width={120} height={120} alt="tamal tolimense"/>
+          <Image priority={true} src={TamalPng.src} width={120} height={120} alt="tamal tolimense"/>
           <h1>Tamales <br></br><span>TOLIMENSES</span></h1>
           <CallToAction>PEDIR AHORA</CallToAction>
         </section>

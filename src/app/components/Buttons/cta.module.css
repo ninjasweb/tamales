@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   color: var(--green);
+  font-family: 'Open Sans';
 }
 .cta:hover {
   transform: scale(1.05);

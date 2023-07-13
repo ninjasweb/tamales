@@ -3,7 +3,7 @@
   height: 35px;
   background-color: var(--yellow);
   overflow-x: hidden;
-  pointer-events: none; /* Added */
+  pointer-events: none;
 }
 
 .cinta {
@@ -19,6 +19,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--green);
+  font-family: 'Open Sans';
 }
 
 @keyframes marquee {
