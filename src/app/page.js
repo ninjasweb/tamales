@@ -15,17 +15,17 @@ export default function Home() {
           <h1>Tamales <br></br><span>TOLIMENSES</span></h1>
           <CallToAction>PEDIR AHORA</CallToAction>
         </section>
-        {/* Products */}
+        {/* Productos */}
         <section className={styles.products}>
           <h2>Nuestros Tamales</h2>
           <p>Tenemos diferentes tamales para todos los gustos. <br></br> Escoge el que prefieras.</p>
           <ProductGrid/>
         </section>
         {/* Aviso */}
-        <Tape/>
+        <Tape textToDisplay={'PICANTE-TRADICIONAL-VEGETARIANO'}/>
         {/* Horarios */}
         <section className={styles.times}>
-          <h3>Horarios:</h3>
+          <h3>Horarios Domicilios:</h3>
           <h4>SAB-DOM-FEST</h4>
           <h4>7:00 AM - 12:00 PM</h4>
           <p style={{display: 'flex', margin: '0 auto', alignItems: 'center'}}><Image src={LocationIcon} width={30} height={30} alt='Ibagué'/> Ibagué, Tolima</p>
@@ -37,7 +37,7 @@ export default function Home() {
           <CallToAction>PEDIR AHORA</CallToAction>
         </section>
         {/* Aviso */}
-        <Tape/>
+        <Tape textToDisplay={'Pedidos: +57 312 300 60 90 |'}/>
       </main>
   )
 }

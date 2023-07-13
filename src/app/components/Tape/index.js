@@ -1,19 +1,14 @@
 import styles from './tape.module.css'
 
-const Tape = () => {
+const Tape = ({textToDisplay}) => {
+  const repetitions = 12
+  const tapeContent = Array.from({length: repetitions} , (_, index)=>(
+    <span key={index}>{textToDisplay}</span>
+  ))
   return ( 
     <div className={styles.wrapper}>
       <div className={styles.cinta}>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
-        <span>PICANTE-TRADICIONAL-VEGETARIANO </span>
+        {tapeContent}
       </div>
     </div>
    )

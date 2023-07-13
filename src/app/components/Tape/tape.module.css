@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: marquee 25s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
 .cinta span {
