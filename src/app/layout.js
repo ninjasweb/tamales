@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <GoogleAnalytics></GoogleAnalytics>
           <Header/>
           {children}
-          {/* <Footer/> */}
+          <Footer/>
         </body>
       </html>
   )
