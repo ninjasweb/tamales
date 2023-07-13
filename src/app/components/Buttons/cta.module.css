@@ -16,6 +16,11 @@
   color: var(--green);
   font-family: '__Open_Sans_f3cbcc';
 }
+@media (max-width: 500px){
+  .cta {
+    padding: 0.25rem 0.3rem;
+  }
+}
 .cta:hover {
   transform: scale(1.05);
   background-color: #D6DAA7;

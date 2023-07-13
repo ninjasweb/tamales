@@ -15,9 +15,20 @@
     padding: 0 1rem;
   }
 }
+@media (max-width: 500px){
+  .header .container {
+    padding: 10px;
+  }
+}
 .nav {
   display: flex;
   align-items: center;
+}
+@media (max-width: 750px){
+  .nav {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
 }
 
 .nav ul li {
@@ -26,6 +37,11 @@
   margin-right: 1rem;
   border-bottom: 1px solid transparent;
   cursor: pointer;
+}
+@media (max-width: 750px){
+  .nav ul li {
+    margin-top: 10px;
+  }
 }
 
 .nav ul li:hover {
