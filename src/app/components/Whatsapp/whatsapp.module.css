@@ -1,0 +1,45 @@
+.whatsapp__bubble {
+  position: fixed;
+  bottom: 1rem;
+  left: 2.5rem;
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+.whatsapp__bubble:hover {
+  transform: scale(1.1);
+}
+.whatsapp__bubble::after, .whatsapp__bubble::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -4px;
+  left: 0px;
+  background-color: #25d366;
+  border-radius: 50%;
+  animation: wave 2s infinite;
+  opacity: 0;
+}
+.whatsapp__bubble::after {
+  animation-delay: 1s;
+}
+.whatsapp__bubble::before {
+  animation-delay: 1.3s;
+}
+.whatsapp__bubble .icon {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

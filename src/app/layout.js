@@ -1,6 +1,7 @@
 'use client'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Whatsapp from './components/Whatsapp'
 import './globals.css'
 import { Open_Sans, Paytone_One } from 'next/font/google'
 import { GoogleAnalytics } from "nextjs-google-analytics"
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <GoogleAnalytics></GoogleAnalytics>
           <Header/>
           {children}
+          <Whatsapp/>
           <Footer/>
         </body>
       </html>
