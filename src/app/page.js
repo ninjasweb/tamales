@@ -5,6 +5,7 @@ import TamalPng from '@/assets/img/tamal.png'
 import ProductGrid from './components/Products/ProductGrid'
 import Tape from './components/Tape'
 import LocationIcon from '@/assets/img/location.svg'
+import Payments from './components/Payments'
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
         <section className={styles.times}>
           <h3>Horarios Domicilios:</h3>
           <h4>SAB-DOM-FEST</h4>
-          <h4>7:00 AM - 12:00 PM</h4>
+          <h4>8:00 AM - 01:00 PM</h4>
           <p style={{display: 'flex', margin: '0 auto', alignItems: 'center'}}><Image src={LocationIcon} width={30} height={30} alt='Ibagué'/> Ibagué, Tolima</p>
         </section>
         {/* Call to Action */}
@@ -35,6 +36,11 @@ export default function Home() {
           <h3 style={{color: 'var(--white)'}}>El verdadero</h3>
           <h3 style={{color: 'var(--yellow)', marginBottom: '1rem'}}>Tamal Tolimense</h3>
           <CallToAction icon>PEDIR AHORA</CallToAction>
+        </section>
+        {/* Métodos de Pago */}
+        <section className={styles.payments}>
+          <p>Puedes pagar con:</p>
+          <Payments/>
         </section>
         {/* Aviso */}
         <Tape textToDisplay={'Pedidos: +57 312 300 60 90 |'}/>

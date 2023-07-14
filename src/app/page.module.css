@@ -90,3 +90,15 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
+.payments {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.payments p {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.3rem;
+}

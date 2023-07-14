@@ -1,0 +1,13 @@
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px ){
+  .logos {
+    flex-direction: column;
+  }
+}
+.logos .logo {
+  margin: 0 1rem;
+}
