@@ -6,7 +6,7 @@ const HacerPedido = () => {
     <>
       <div className={styles.form__page}>
         <div className={styles.form__container}>
-          <h2>Haz tu pedido online.</h2>
+          <h2>Haz tu pedido <span style={{color: 'var(--yellow)'}}>online</span>.</h2>
           <h2>Paga cuando recibas tu pedido</h2>
           <OrderForm/>
           <p className={styles.info}>Recibirás una llamada o mensaje de confirmación de tu pedido.</p>

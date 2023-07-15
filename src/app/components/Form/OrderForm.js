@@ -109,6 +109,9 @@ const OrderForm = () => {
                 Hacer Pedido
               </CallToAction>
             </div>
+            <div className="advise">
+              <p>Entregas: Viernes-Sábado-Domindo. de 8:00 am - 1:00 pm</p>
+            </div>
           </div>
         </Form>
         <style jsx>{`
@@ -140,6 +143,11 @@ const OrderForm = () => {
         .total {
           border-top: 1px solid var(--white);
           padding-top: 10px;
+        }
+        .advise p {
+          text-align: center;
+          margin: 1rem 0;
+          color: var(--white);
         }
         `}</style>
       </>
