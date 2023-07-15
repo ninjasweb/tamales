@@ -40,6 +40,7 @@ const OrderForm = () => {
       <>
         <Form>
           <div className="form">
+            <p style={{color: 'var(--white)'}}>Información de contacto:</p>
             <div className="row">
               <TextFieldUI placeholder="Nombres" name="name" />
               <TextFieldUI placeholder="Apellidos" name="lastName" />
@@ -49,7 +50,7 @@ const OrderForm = () => {
               <TextFieldUI placeholder="Teléfono" name="phone" />
             </div>
             <div className="row single">
-              <p>Dirección:</p>
+              <p>Dirección de entrega:</p>
               <TextFieldUI
                 placeholder="Dirección Ej: Calle 27 d sur # 27 c 51"
                 name="address"
@@ -105,7 +106,7 @@ const OrderForm = () => {
                 }}
                 type="submit"
               >
-                Enviar
+                Hacer Pedido
               </CallToAction>
             </div>
           </div>
