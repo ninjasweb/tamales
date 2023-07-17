@@ -43,7 +43,7 @@ const SelectUI = ({
           </MenuItem>
         ))}
         </Select>
-        <FormHelperText>{configSelect.helpertext}</FormHelperText>
+        <FormHelperText style={{color: '#d32f2f'}}>{configSelect.helpertext}</FormHelperText>
       </FormControl>
    )
 }

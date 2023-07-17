@@ -7,6 +7,7 @@ import Tape from './components/Tape'
 import LocationIcon from '@/assets/img/location.svg'
 import Payments from './components/Payments'
 
+
 export default function Home() {
   return (
       <main className={styles.main}>
@@ -27,7 +28,7 @@ export default function Home() {
         {/* Horarios */}
         <section className={styles.times}>
           <h3>Horarios Domicilios:</h3>
-          <h4>SAB-DOM-FEST</h4>
+          <h4>VIE-SÁB-DOM</h4>
           <h4>8:00 AM - 01:00 PM</h4>
           <p style={{display: 'flex', margin: '0 auto', alignItems: 'center'}}><Image src={LocationIcon} width={30} height={30} alt='Ibagué'/> Ibagué, Tolima</p>
         </section>
@@ -43,7 +44,7 @@ export default function Home() {
           <Payments/>
         </section>
         {/* Aviso */}
-        <Tape textToDisplay={'Pedidos: +57 312 300 60 90 |'}/>
+        <Tape textToDisplay={'Pedidos: +57 314 272 9497 |'}/>
       </main>
   )
 }

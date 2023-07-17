@@ -6,8 +6,11 @@ import TextFieldUI from "./TextFieldUI";
 import CallToAction from "../Buttons/CallToAction";
 import SelectUI from "./SelectUI";
 import Counter from "./Counter";
+import { useState } from "react";
 
 const OrderForm = () => {
+  const [errorMessage, seterrorMessage] = useState()
+  const [displayError, setDisplayError] = useState()
   const INITIAL_STATE = {
     name: "",
     lastName: "",
@@ -22,20 +25,31 @@ const OrderForm = () => {
       picante: 0,
       vegetariano: 0,
     },
-  };
+  }
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("El nombre es obligatorio"),
     address: Yup.string().required("La dirección es obligatoria"),
-  });
+    phone: Yup.string()
+      .matches(
+        /^[0-9]{7,15}$/,
+        "El teléfono debe contener solo números y tener entre 7 y 15 dígitos"
+      )
+      .required("El teléfono es obligatorio"),
+    email: Yup.string()
+      .email("Ingresa un correo electrónico válido")
+      .required("El correo electrónico es obligatorio"),
+    city: Yup.string().required("La ciudad es obligatoria"),
+    neighborhood: Yup.string().required("El barrio es obligatorio"),
+  })
 
   const handleSubmit = (values) => {
-    console.log(values);
-  };
+    console.log(values)
+    setDisplayError(false)
+  }
 
   const OrderFormInner = () => {
-    const { values } = useFormikContext();
-
+    const { values } = useFormikContext()
     return (
       <>
         <Form>
@@ -67,7 +81,7 @@ const OrderForm = () => {
                 id="city"
                 name="city"
                 label="Ciudad"
-                options={["Ibagué", "Bogotá (Muy pronto)"]}
+                options={["Ibagué", "Bogotá"]}
               />
               <TextFieldUI name="neighborhood" placeholder="Barrio" />
             </div>
@@ -90,8 +104,8 @@ const OrderForm = () => {
             <div className="row single total">
               <p style={{fontWeight: 'bold'}}>TOTAL:</p>
               <p> Subtotal: ${ (values.selectedCount.tradicional * 8000) + (values.selectedCount.picante * 8500) + (values.selectedCount.vegetariano * 9000)}</p>
-              <p>Domicilio: {values.city === 'Ibagué' ? '$5,000' : '$8,000'}</p>
-              <p>Total a pagar: ${ (values.selectedCount.tradicional * 8000 + values.selectedCount.picante * 8500 + values.selectedCount.vegetariano * 9000) + (values.city === 'Ibagué' ? 5000 : 8000)}</p>
+              <p>Domicilio: {values.city === 'Ibagué' ? '$5,000' : values.city === 'Bogotá' ? '$8,000' : '(Selecciona una ciudad)'}</p>
+              <p>Total a pagar: ${ (values.selectedCount.tradicional * 8000 + values.selectedCount.picante * 8500 + values.selectedCount.vegetariano * 9000) + (values.city === 'Ibagué' ? 5000 : values.city === 'Bogotá' ? 8000 : 0)}</p>
             </div>
             {/* SEND */}
             <div
@@ -109,8 +123,14 @@ const OrderForm = () => {
                 Hacer Pedido
               </CallToAction>
             </div>
+            {/* Error Message */}
+            {displayError ? <p style={{
+              color: '#d32f2f',
+              textAlign: 'center',
+              marginTop: '1rem'
+            }}>{errorMessage}</p> : '' }
             <div className="advise">
-              <p>Entregas: Viernes-Sábado-Domindo. de 8:00 am - 1:00 pm</p>
+              <p>Entregas: Viernes-Sábado-Domingo. de 8:00 am - 1:00 pm</p>
             </div>
           </div>
         </Form>
@@ -162,6 +182,15 @@ const OrderForm = () => {
           initialValues={INITIAL_STATE}
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
+          validate={values =>{
+            const errors = {}
+            if(!values.name || !values.address || !values.phone || !values.email || !values.city){
+              errors.message = "Uno o más campos tienen un error o falta información"
+              seterrorMessage(errors.message)
+              setDisplayError(true)
+              return errors
+            }
+          }}
         >
           <OrderFormInner />
         </Formik>
