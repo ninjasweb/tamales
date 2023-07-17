@@ -1,0 +1,17 @@
+.sendOrder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.sendOrder h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.sendOrder p {
+  color: var(--white);
+}

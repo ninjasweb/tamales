@@ -7,10 +7,13 @@ import CallToAction from "../Buttons/CallToAction";
 import SelectUI from "./SelectUI";
 import Counter from "./Counter";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const OrderForm = () => {
   const [errorMessage, seterrorMessage] = useState()
   const [displayError, setDisplayError] = useState()
+  const [loading, setLoading] = useState(false)
+  const router = useRouter()
   const INITIAL_STATE = {
     name: "",
     lastName: "",
@@ -43,9 +46,19 @@ const OrderForm = () => {
     neighborhood: Yup.string().required("El barrio es obligatorio"),
   })
 
-  const handleSubmit = (values) => {
-    console.log(values)
-    setDisplayError(false)
+  const handleSubmit = async (values, {resetForm}) => {
+    try {
+      console.log(values)
+      setLoading(true)
+      setDisplayError(false)
+      resetForm()
+      await new Promise((resolve) => setTimeout(resolve, 2000))
+      router.push('/orden-enviada')
+    } catch(error){
+      console.error('Error al enviar el mensaje: ', error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const OrderFormInner = () => {
@@ -120,7 +133,7 @@ const OrderForm = () => {
                 }}
                 type="submit"
               >
-                Hacer Pedido
+                {loading ? 'Enviando...' : 'Hacer Pedido'}
               </CallToAction>
             </div>
             {/* Error Message */}
