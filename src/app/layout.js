@@ -19,6 +19,25 @@ export default function RootLayout({ children }) {
       <html lang="es">
         <head>
           <title>Tamales del Tolima | El verdadero tamal tolimense.</title>
+          <meta name="description" content="Disfruta del auténtico sabor colombiano con nuestros deliciosos Tamales Tolimenses. Prueba los mejores tamales tolimenses en una variedad de sabores deliciosos. ¡Haz tu pedido ahora y saborea la tradición en cada bocado!" />
+          <meta name="keywords" content="Tamal Tolimense, tamales tolimenses, receta tamales tolimenses, tamales domicilio, tamales a domicilio, tamales ibague, tamales bogota" />
+          <meta name="robots" content="index, follow" />
+          <meta name="language" content="Spanish" />
+          <meta name="author" content="tamalestolimenses.co" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <meta property="og:title" content="Tamales Tolimenses - El auténtico sabor colombiano | TamalesTolimenses.co" />
+          <meta name="description" content="Disfruta del auténtico sabor colombiano con nuestros deliciosos Tamales Tolimenses. Prueba los mejores tamales tolimenses en una variedad de sabores deliciosos. ¡Haz tu pedido ahora y saborea la tradición en cada bocado!" />
+          <meta property="og:image" content="/tamalestolimenses.jpg" />
+          <meta property="og:url" content="https://tamalestolimenses.co" />
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content="es_ES" />
+          <meta property="og:site_name" content="TamalesTolimenses.co" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Tamales Tolimenses - El auténtico sabor colombiano | TamalesTolimenses.co" />
+          <meta name="description" content="Disfruta del auténtico sabor colombiano con nuestros deliciosos Tamales Tolimenses. Prueba los mejores tamales tolimenses en una variedad de sabores deliciosos. ¡Haz tu pedido ahora y saborea la tradición en cada bocado!" />
+          <meta name="twitter:image" content="/tamalestolimenses.jpg" />
         </head>
         <body className={`${open_sans.className} ${paytone.className}`}>
           <GoogleAnalytics></GoogleAnalytics>
