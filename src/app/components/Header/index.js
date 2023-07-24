@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from 'react'
 import styles from './header.module.css'
 import CallToAction from '../Buttons/CallToAction'

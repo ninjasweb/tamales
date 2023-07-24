@@ -1,4 +1,3 @@
-'use client'
 import Script from 'next/script'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -14,12 +13,15 @@ const paytone = Paytone_One({
   weight: '400'
 })
 
+export const metadata = {
+  title: `Tamales Tolimenses | La receta del verdadero tamal tolimense`,
+  description: `Disfruta del auténtico sabor colombiano con nuestros deliciosos Tamales Tolimenses. Prueba los mejores tamales tolimenses en una variedad de sabores deliciosos. ¡Haz tu pedido ahora y saborea la tradición en cada bocado!`,
+}
+
 export default function RootLayout({ children }) {
   return (
       <html lang="es">
         <head>
-          <title>Tamales del Tolima | El verdadero tamal tolimense.</title>
-          <meta name="description" content="Disfruta del auténtico sabor colombiano con nuestros deliciosos Tamales Tolimenses. Prueba los mejores tamales tolimenses en una variedad de sabores deliciosos. ¡Haz tu pedido ahora y saborea la tradición en cada bocado!" />
           <meta name="keywords" content="Tamal Tolimense, tamales tolimenses, receta tamales tolimenses, tamales domicilio, tamales a domicilio, tamales ibague, tamales bogota" />
           <meta name="robots" content="index, follow" />
           <meta name="language" content="Spanish" />
