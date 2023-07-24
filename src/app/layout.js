@@ -1,10 +1,10 @@
 'use client'
+import Script from 'next/script'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Whatsapp from './components/Whatsapp'
 import './globals.css'
 import { Open_Sans, Paytone_One } from 'next/font/google'
-import { GoogleAnalytics } from "nextjs-google-analytics"
 
 const open_sans = Open_Sans({ 
   subsets: ['latin'],
@@ -40,7 +40,16 @@ export default function RootLayout({ children }) {
           <meta name="twitter:image" content="/tamalestolimenses.jpg" />
         </head>
         <body className={`${open_sans.className} ${paytone.className}`}>
-          <GoogleAnalytics></GoogleAnalytics>
+          <Script id='ga' async src='https://www.googletagmanager.com/gtag/js?id=G-P74WM0196S'></Script>
+          <Script id="ga_html" dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-P74WM0196S', {cookie_flags: 'SameSite=None;Secure'});
+            `
+          }}></Script>
           <Header/>
           {children}
           <Whatsapp/>
