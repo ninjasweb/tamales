@@ -28,9 +28,8 @@ const Footer = () => {
       <div className={styles.social}>
         {SocialIcons.map((social)=>{
           return(
-            <Link title={social.name} target='_blank' className={styles.link} href={social.url}>
-              <Image 
-                key={social.name} 
+            <Link key={social.name} title={social.name} target='_blank' className={styles.link} href={social.url}>
+              <Image  
                 src={social.icon} 
                 width={40} 
                 height={40} 
