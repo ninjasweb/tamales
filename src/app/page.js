@@ -7,7 +7,6 @@ import Tape from './components/Tape'
 import LocationIcon from '@/assets/img/location.svg'
 import Payments from './components/Payments'
 
-
 export default function Home() {
   return (
       <main className={styles.main}>

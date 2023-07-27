@@ -12,3 +12,16 @@
 .footer a {
   color: var(--yellow);
 }
+.footer .social {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.footer .social .link {
+  margin: 0 1rem;
+  transition: all ease-in-out .3s;
+  height: 100%;
+  display: inline-block;
+}
+.footer .social .link:hover {
+  transform: scale(1.2);
+}
