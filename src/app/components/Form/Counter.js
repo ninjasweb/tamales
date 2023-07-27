@@ -24,7 +24,7 @@ const Counter = ({ productName, type, price }) => {
   return (
     <>
       <div className="product">
-        <p>{productName} ({price})</p>
+        <p>{productName} ({price} c/u)</p>
         <div className="counter">
           <span className={`button ${count === 0 ? 'disabled' : ''}`} onClick={handleDecrease}>
             -

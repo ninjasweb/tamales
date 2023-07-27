@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-const Product = ({title, image, price}) => {
+const Product = ({title, image, price, stock}) => {
   return ( 
     <article style={{
       display: 'flex',
@@ -32,6 +32,19 @@ const Product = ({title, image, price}) => {
         bottom: '0',
         right: '50px'
       }}>{price}</span>
+      {stock ? '' :
+        <p style={{
+          position: 'absolute',
+          left: '70px',
+          bottom: '10px',
+          backgroundColor: 'var(--yellow)',
+          color: 'var(--green)',
+          padding: '5px 10px',
+          borderRadius: '10px',
+          fontWeight: 'bold',
+          border: '2px solid var(--green)'
+        }}>Agotado</p>
+      }
     </article>
    )
 }

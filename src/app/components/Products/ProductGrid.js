@@ -9,17 +9,20 @@ const ProductGrid = () => {
     {
       title: 'Picante',
       image: Picante.src,
-      price: '$8.5'
+      price: '$8.5',
+      stock: true
     },
     {
       title: 'Tradicional',
       image: Tradicional.src,
-      price: '$8'
+      price: '$8',
+      stock: true
     },
     {
       title: 'Vegetariano',
       image: Light.src,
-      price: '$9'
+      price: '$9',
+      stock: false
     }
   ]
   return ( 
@@ -31,6 +34,7 @@ const ProductGrid = () => {
               title={product.title}
               image={product.image}
               price={product.price}
+              stock={product.stock}
             />
           )
         })}
